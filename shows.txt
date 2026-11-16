@@ -1,0 +1,5 @@
+101,Avatar: Fire and Ash,18:00,5,8
+102,Interstellar,21:00,5,8
+103,The Lion King,20:00,5,8
+104,Oppenheimer,21:00,5,8
+105,The Dark Knight,15:00,5,8
