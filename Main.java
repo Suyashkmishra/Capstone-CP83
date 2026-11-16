@@ -440,6 +440,14 @@ public class Main {
         for (int m = 0; m < distinctMovies.size(); m++) {
             String movie = distinctMovies.get(m);
             double movieRevenue = 0.0;
+            int movieBooked = 0;
+            int movieTotal = 0;
+            for (int i = 0; i < showList.size(); i++) {
+                if (showList.get(i).getMovieName().equalsIgnoreCase(movie)) {
+                    movieBooked += showList.get(i).getBookedSeatCount();
+                    movieTotal += showList.get(i).getTotalSeats();
+                }
+            }
             for (int b = 0; b < bookingList.size(); b++) {
                 Booking booking = bookingList.get(b);
                 if (booking.getMovieName().equalsIgnoreCase(movie)) {
@@ -450,7 +458,8 @@ public class Main {
                     }
                 }
             }
-            System.out.printf("Movie: %-25s -> Revenue: Rs %.2f\n", movie, movieRevenue);
+            System.out.printf("Movie: %-25s -> Seats: %d/%d | Revenue: Rs %.2f\n", movie, movieBooked, movieTotal,
+                    movieRevenue);
         }
 
         int activeCount = 0;
