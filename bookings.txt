@@ -1,1 +1,3 @@
 1,102,Interstellar,21:00,Suyash mishra,A3;A4,Popcorn (Rs 120),620.0,CANCELLED,496.0
+2,104,Oppenheimer,21:00,raj,A6,Nachos (Rs 150),400.0,BOOKED,0.0
+3,103,The Lion King,20:00,yashweer,A2;A3;A4,Popcorn + Coke (Rs 200),950.0,BOOKED,0.0
